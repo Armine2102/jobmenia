@@ -1,0 +1,63 @@
+.education_title {
+  @include title;
+  margin-bottom: 35px;
+}
+.education_images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.education_img:hover {
+  opacity: .9;
+  cursor: pointer;
+  }
+.education_centers {
+  width: 1419px;
+  height: 67px;
+  background: $color-purple;
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 105px;
+}
+.center_coupon {
+  font-weight: 300;
+  font-size: 40px;
+  font-family: $font2;
+  color: $color-white;
+}
+.education_btn {
+  width: 228px;
+  height: 36px;
+  background: $color-white;
+  border: none;
+  border-radius: 16px;
+  margin-left: 41px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: $font2;
+  color: $color-purple;
+  transition: all .3s ease-in-out;
+  &:hover {
+    background-color: $color-purple;
+    color: $color-white;
+    border: 2px solid $color-white;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .education_images {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .education_img {
+    margin-right: 80px;
+  }
+  .education_centers {
+    width: 1100px;
+  }
+  .center_coupon {
+    font-size: 30px;
+  }
+}

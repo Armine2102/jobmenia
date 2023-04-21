@@ -1,0 +1,102 @@
+.companies_title {
+  @include title;
+  margin-bottom: 39px;
+}
+.companies_content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+/*.companies_items {
+  display: flex;
+  position: relative;
+  margin-bottom: 23px;
+}*/
+.companies_items {
+  display: none;
+  position: relative;
+  margin-bottom: 23px;
+  &.active {
+    display: flex;
+  }
+}
+.companies_item {
+  width: 335px;
+  height: 178px;
+  border: 2px solid rgba(0, 91, 255, 0.15);
+  background-color: $color-white;
+  border-radius: 16px;
+  display: flex;
+  padding: 36px 14px;
+  margin-right: 17px;
+  &:nth-last-child{
+    margin-right: 0;
+  }
+}
+.companies_desc {
+  margin-left: 16px;
+}
+.companies_img {
+  width: 110px;
+  height: 110px;
+}
+.companies_name {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: $font2;
+  margin-top: -6px;
+}
+.active_jobs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: -5px;
+}
+.active_jobs-link {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: $font2;
+  color: rgba(45, 47, 48, 0.7);
+  padding-left: 6px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    color: $color-black;
+  }
+}
+.companies_btn {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $font2;
+  padding: 6px 56px;
+  background-color: $color-blue2;
+  border: none;
+  border-radius:4px;
+  color: $color-white;
+  transition: all .3s ease-in-out;
+  &:hover {
+    opacity: .8;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .companies_img {
+    width: 80px;
+    height: 80px;
+  }
+  .companies_name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .active_jobs-link {
+    font-size: 14px;
+  }
+  .companies_btn {
+    width: 110px;
+    padding: 0;
+  }
+  .companies_item {
+    width: 260px;
+    height: 155px;
+  }
+}

@@ -1,0 +1,1076 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&family=Poppins:wght@200;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1430px;
+  width: 100%;
+  margin: 0 auto; }
+
+@media (max-width: 1429px) and (min-width: 1200px) {
+  .container {
+    width: 1100px; } }
+
+@font-face {
+  font-family: 'Inter'; }
+
+@font-face {
+  font-family: 'Poppins'; }
+
+/*fonts*/
+/*colors*/
+.header {
+  font-family: "Inter";
+  width: 100%;
+  margin-bottom: 79px; }
+  .header_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 58px;
+    margin-left: -60px; }
+  .header_items {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 25px; }
+  .header_item {
+    margin-right: 35px; }
+    .header_item:nth-child(7) {
+      margin-right: 0; }
+  .header .header_link {
+    font-size: 20px;
+    list-style-type: none;
+    font-weight: 700;
+    color: #2D2F30;
+    transition: all .3s ease-in-out; }
+    .header .header_link:hover {
+      opacity: .8; }
+  .header .header_link--btn {
+    background-color: #005BFF;
+    padding: 4px 16px;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #ffffff; }
+    .header .header_link--btn:hover {
+      background-color: #ffffff;
+      color: #005BFF; }
+  .header .logo_name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #ffffff;
+    padding: 12px 30px 12px 40px;
+    background: linear-gradient(#005BFF 0%, #0080FF 100%);
+    border-radius: 250px; }
+
+.logo_img {
+  width: 238px; }
+
+.wrapper {
+  background-image: url(../img/img.png);
+  background-size: cover;
+  background-position: center; }
+
+.job-header {
+  margin-bottom: 58px;
+  margin-bottom: 18px; }
+
+.nav-job {
+  padding-right: 40px; }
+
+/*media*/
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .logo_img {
+    width: 200px; }
+  .header .header_link {
+    font-size: 18px; }
+  .header_item {
+    margin-right: 22px; } }
+
+.footer {
+  background-color: #45AAFF;
+  height: 439px;
+  color: #ffffff;
+  font-family: "Inter"; }
+  .footer_item-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 24px;
+    padding-top: 90px; }
+
+.footer_link {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: all .3s ease-in-out; }
+  .footer_link:hover {
+    color: #005BFF; }
+
+.footer_item {
+  margin-bottom: 52px; }
+
+.footer_items {
+  display: flex;
+  justify-content: space-around; }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  width: 216px; }
+
+.social_link:hover img {
+  opacity: .9; }
+
+.copyright {
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Inter";
+  display: flex;
+  align-items: center;
+  margin-left: 40px; }
+
+.copyright_text {
+  font-size: 14px; }
+
+.group {
+  font-size: 20px;
+  padding-left: 35%; }
+
+.footer_btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 5px 15px;
+  background-color: #45AAFF;
+  border: 1px solid #ffffff;
+  margin-left: 313px;
+  transition: all .3s ease-in-out; }
+  .footer_btn:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #45AAFF;
+    color: #45AAFF; }
+
+.social_link {
+  transition: all .3s ease-in-out; }
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .footer_item-title {
+    font-size: 14px; }
+  .footer_link {
+    font-size: 14px; }
+  .group {
+    font-size: 18px; }
+  .copyright {
+    margin-left: 20px; } }
+
+.main {
+  margin-bottom: 28px; }
+
+.main_content {
+  max-width: 865px;
+  margin-left: 20%; }
+
+.main_title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #2D2F30;
+  margin-bottom: 24px; }
+
+.main_btn {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 48px;
+  border: 2px solid #005BFF;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  background: transparent;
+  color: #333333;
+  transition: all .3s ease-in-out; }
+  .main_btn:hover {
+    background-color: #005BFF;
+    color: #ffffff;
+    cursor: pointer; }
+
+.find_text {
+  width: 655px;
+  height: 60px;
+  background: #ffffff;
+  border: 2px solid #005BFF;
+  border-radius: 16px; }
+  .find_text::placeholder {
+    font-size: 22px;
+    color: rgba(45, 47, 48, 0.7);
+    padding-left: 24px;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center; }
+
+.find_btn {
+  height: 60px;
+  width: 200px;
+  padding: 9px 38px;
+  font-family: "Poppins";
+  background: linear-gradient(180deg, #005BFF 0%, #0080FF 100%);
+  border-radius: 16px;
+  border: none;
+  font-weight: 300;
+  font-size: 32px;
+  color: #ffffff;
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease-in-out; }
+  .find_btn:hover {
+    opacity: .9;
+    cursor: pointer; }
+
+.main_find {
+  display: flex;
+  align-items: center;
+  padding-bottom: 61px; }
+
+.job-find {
+  padding-bottom: 28px; }
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .main_content {
+    margin-left: 15%; }
+  .main_title {
+    font-size: 35px; }
+  .main_btn {
+    font-size: 20px; }
+  .find_text {
+    width: 550px; }
+  .find_btn {
+    font-size: 27px; } }
+
+.job {
+  margin-bottom: 28px; }
+
+.job_title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #2D2F30;
+  margin-bottom: 38px; }
+
+.job_cards {
+  display: none;
+  position: relative;
+  margin-bottom: 23px; }
+  .job_cards.active {
+    display: flex; }
+
+.job_card {
+  background: #ffffff;
+  border: 2px solid rgba(0, 91, 255, 0.15);
+  border-radius: 16px;
+  width: 450px;
+  height: 178px;
+  padding: 22px 65px;
+  margin-right: 20px;
+  transition: all .3s ease-in-out; }
+  .job_card:hover {
+    border: 2px solid #005BFF; }
+  .job_card:nth-last-child {
+    margin-right: 0; }
+
+.company_desc {
+  display: flex; }
+  .company_desc img {
+    margin-bottom: 15px; }
+
+.company_name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2D2F30;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  font-family: "Inter"; }
+
+.company_address {
+  font-weight: 500;
+  font-size: 12px;
+  color: #2D2F30;
+  padding-left: 6px;
+  font-family: "Inter"; }
+
+.company_map {
+  display: flex; }
+  .company_map img {
+    width: 7px;
+    height: 9px; }
+
+.salary {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2D2F30;
+  margin-bottom: 16.18px;
+  font-family: "Inter"; }
+
+.skill {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 3px 4px;
+  background: linear-gradient(#005BFF 0%, #0080FF 100%);
+  border-radius: 3px;
+  margin-right: 8px;
+  font-family: "Poppins";
+  transition: all .3s ease-in-out; }
+  .skill:nth-last-child {
+    margin-right: 0; }
+  .skill:hover {
+    opacity: .8; }
+
+.job_content {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.fa-chevron-left {
+  position: absolute;
+  color: #ffffff;
+  background-color: #005BFF;
+  padding: 5px 8px;
+  border-radius: 40%;
+  z-index: 2;
+  cursor: pointer;
+  top: 40%;
+  transition: 0.6s ease;
+  user-select: none;
+  left: 0; }
+
+.fa-chevron-right {
+  position: absolute;
+  color: #ffffff;
+  background-color: #005BFF;
+  padding: 5px 8px;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+  top: 40%;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 17px; }
+
+.slider-links {
+  width: 100%;
+  text-align: center; }
+
+.slider-link, .companies-slider-link {
+  width: 6px;
+  height: 6px;
+  background-color: #47494A;
+  border-radius: 4px;
+  display: inline-block; }
+
+.slider-link.active,
+.companies-slider-link.active {
+  width: 25px;
+  background-color: #005BFF; }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s; }
+
+@keyframes fade {
+  from {
+    opacity: .6; }
+  to {
+    opacity: 1; } }
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .company_name {
+    font-size: 14px; }
+  .job_card {
+    padding: 15px 25px;
+    width: 350px; }
+  .company_map {
+    align-items: center; }
+  .company_desc img {
+    margin-bottom: 5px; }
+  .skill {
+    margin-right: 3px; }
+  .fa-chevron-right {
+    top: 38%;
+    right: 0px; }
+  .fa-chevron-left {
+    top: 38%;
+    left: -18px; } }
+
+.popular_title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #2D2F30;
+  margin-bottom: 39px; }
+
+.popular_items {
+  display: flex;
+  align-items: center; }
+
+.popular_item {
+  margin-right: 20px; }
+  .popular_item:nth-last-child {
+    margin-right: 0; }
+  .popular_item:nth-child(2) .popular_fon {
+    background-color: #6046FB; }
+  .popular_item:nth-child(3) .popular_fon {
+    background-color: #7EA1FF; }
+  .popular_item:nth-child(4) .popular_fon {
+    background-color: #1F56C8; }
+  .popular_item:nth-child(5) .popular_fon {
+    background-color: #1179EF; }
+  .popular_item:nth-child(6) .popular_fon {
+    background-color: #0088FF; }
+  .popular_item:nth-child(7) .popular_fon {
+    background-color: #2698FF; }
+  .popular_item:nth-child(8) .popular_fon {
+    background-color: #45AAFF; }
+  .popular_item:nth-child(9) .popular_fon {
+    background-color: #75C1FF; }
+
+.popular_fon {
+  width: 140px;
+  height: 140px;
+  background-color: #0064FF;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px; }
+
+.popular_profession {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 38px;
+  transition: all .3s ease-in-out; }
+  .popular_profession:hover {
+    opacity: .9;
+    cursor: pointer; }
+
+.popular_img:hover {
+  box-shadow: 0 0 4px #ffffff;
+  cursor: pointer; }
+
+/*media*/
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .popular_items {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .popular_item {
+    margin-right: 70px; } }
+
+.companies_title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #2D2F30;
+  margin-bottom: 39px; }
+
+.companies_content {
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+/*.companies_items {
+  display: flex;
+  position: relative;
+  margin-bottom: 23px;
+}*/
+.companies_items {
+  display: none;
+  position: relative;
+  margin-bottom: 23px; }
+  .companies_items.active {
+    display: flex; }
+
+.companies_item {
+  width: 335px;
+  height: 178px;
+  border: 2px solid rgba(0, 91, 255, 0.15);
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  padding: 36px 14px;
+  margin-right: 17px; }
+  .companies_item:nth-last-child {
+    margin-right: 0; }
+
+.companies_desc {
+  margin-left: 16px; }
+
+.companies_img {
+  width: 110px;
+  height: 110px; }
+
+.companies_name {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Poppins";
+  margin-top: -6px; }
+
+.active_jobs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: -5px; }
+
+.active_jobs-link {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: rgba(45, 47, 48, 0.7);
+  padding-left: 6px;
+  transition: all .3s ease-in-out; }
+  .active_jobs-link:hover {
+    color: #000000; }
+
+.companies_btn {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Poppins";
+  padding: 6px 56px;
+  background-color: #0064FF;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all .3s ease-in-out; }
+  .companies_btn:hover {
+    opacity: .8;
+    cursor: pointer; }
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .companies_img {
+    width: 80px;
+    height: 80px; }
+  .companies_name {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .active_jobs-link {
+    font-size: 14px; }
+  .companies_btn {
+    width: 110px;
+    padding: 0; }
+  .companies_item {
+    width: 260px;
+    height: 155px; } }
+
+.consulting_title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #2D2F30;
+  margin-bottom: 39px; }
+
+.consulting_help {
+  width: 1419px;
+  height: 67px;
+  background: linear-gradient(180deg, #0064FF 0%, #2698FF 100%);
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px; }
+  .consulting_help a {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: "Poppins";
+    transition: all .3s ease-in-out; }
+    .consulting_help a:hover {
+      color: #d2d2d2; }
+
+.consulting_items {
+  display: flex; }
+
+.consulting_content {
+  background: #ffffff;
+  border: 2px solid rgba(0, 91, 255, 0.15);
+  border-radius: 16px;
+  width: 350px;
+  height: 350px;
+  margin-right: 14px;
+  margin-bottom: 17px; }
+  .consulting_content:nth-last-child {
+    margin-right: 0; }
+
+.workplace img {
+  width: 40px;
+  height: 40px; }
+
+.consulting_img {
+  text-align: center;
+  margin-top: -27%; }
+  .consulting_img img {
+    transition: all .3s ease-in-out; }
+  .consulting_img img:hover {
+    transform: translateY(-10px);
+    cursor: pointer; }
+
+.consulting_desc {
+  padding-left: 51px; }
+
+.consulting_name {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Poppins";
+  margin-bottom: 11px; }
+
+.stars span {
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Poppins"; }
+
+.stars {
+  margin-bottom: 17px; }
+  .stars img {
+    margin-right: 6px; }
+
+.star:active {
+  border: 1px solid #005BFF;
+  border-radius: 50%; }
+
+.star:hover {
+  cursor: pointer; }
+
+.consulting_position {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #ffffff;
+  background-color: #45AAFF;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 17px;
+  transition: all .3s ease-in-out; }
+  .consulting_position:hover {
+    cursor: pointer;
+    opacity: .9; }
+
+.consulting_years {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins";
+  width: 250px;
+  background: #1179EF;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 26px;
+  transition: all .3s ease-in-out; }
+  .consulting_years:hover {
+    cursor: pointer;
+    opacity: .9; }
+
+.workplace img {
+  margin-right: 3px;
+  transition: all .3s ease-in-out; }
+  .workplace img:hover {
+    cursor: pointer;
+    border: 2px solid #005BFF;
+    border-radius: 50%; }
+
+.consulting_btn {
+  background: #6046FB;
+  border-radius: 30px;
+  width: 350px;
+  height: 50px;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Poppins";
+  margin-bottom: 14px;
+  transition: all .3s ease-in-out; }
+  .consulting_btn:hover {
+    opacity: .9;
+    cursor: pointer; }
+
+.discount {
+  font-weight: 400;
+  font-size: 24px;
+  color: #6046FB;
+  font-family: "Poppins";
+  margin-bottom: 38px; }
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .consulting_help {
+    width: 1100px; }
+    .consulting_help a {
+      font-size: 35px; }
+  .consulting_items {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 90px; }
+  .discount {
+    display: flex;
+    justify-content: center; } }
+
+.education_title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #2D2F30;
+  margin-bottom: 35px; }
+
+.education_images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px; }
+
+.education_img:hover {
+  opacity: .9;
+  cursor: pointer; }
+
+.education_centers {
+  width: 1419px;
+  height: 67px;
+  background: #6046FB;
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 105px; }
+
+.center_coupon {
+  font-weight: 300;
+  font-size: 40px;
+  font-family: "Poppins";
+  color: #ffffff; }
+
+.education_btn {
+  width: 228px;
+  height: 36px;
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  margin-left: 41px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: #6046FB;
+  transition: all .3s ease-in-out; }
+  .education_btn:hover {
+    background-color: #6046FB;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer; }
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .education_images {
+    flex-wrap: wrap;
+    row-gap: 30px; }
+  .education_img {
+    margin-right: 80px; }
+  .education_centers {
+    width: 1100px; }
+  .center_coupon {
+    font-size: 30px; } }
+
+.showing_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins";
+  margin-bottom: 33px; }
+
+.showing_text {
+  font-weight: 400;
+  font-size: 28px;
+  color: #000000; }
+  .showing_text span {
+    color: #0060FF;
+    font-weight: 600; }
+
+.showing_links {
+  border: 1px solid #2D2F30;
+  border-radius: 16px;
+  padding: 5px 15px; }
+  .showing_links:hover {
+    cursor: pointer;
+    background-color: #2698FF;
+    border: 1px solid #2698FF;
+    color: #ffffff; }
+
+.showing_link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #2D2F30; }
+
+.showing_item-more {
+  background-color: #005BFF;
+  width: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  border-radius: 16px;
+  transition: all .3s ease-in-out; }
+  .showing_item-more:hover {
+    opacity: .8; }
+  .showing_item-more img {
+    padding-left: 10px; }
+
+.showing_btn {
+  color: #ffffff; }
+
+/*media*/
+.job_card {
+  position: relative; }
+
+.trible {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.left_bar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; }
+
+.card-soft {
+  border: none; }
+  .card-soft:hover {
+    border: none; }
+
+.card-id {
+  border: none; }
+  .card-id:hover {
+    border: none; }
+
+.right_bar-content {
+  width: 945px;
+  height: 2360px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 91, 255, 0.15);
+  border-radius: 30px; }
+
+.bar_content {
+  display: flex;
+  padding-bottom: 15px; }
+
+.data_title {
+  display: flex;
+  justify-content: space-between; }
+  .data_title .data_btn:nth-of-type(1) {
+    background-color: #2698FF; }
+  .data_title .data_btn:nth-of-type(2) {
+    background-color: #005BFF; }
+  .data_title .data_btn:nth-of-type(3) {
+    background-color: #ffffff;
+    border: 1px solid #005BFF;
+    color: #005BFF; }
+    .data_title .data_btn:nth-of-type(3):hover {
+      background-color: #2698FF;
+      border: 1px solid #ffffff;
+      color: #ffffff; }
+
+.data_description {
+  padding-top: 18px;
+  padding-right: 49px;
+  padding-left: 129px; }
+
+.data_logo {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 39px; }
+
+.data_name {
+  font-weight: 500;
+  font-size: 30px;
+  color: #2D2F30;
+  font-family: "Poppins";
+  margin-bottom: 11px; }
+
+.data_address {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2D2F30;
+  font-family: "Poppins";
+  padding-left: 8px;
+  transition: all .3s ease-in-out; }
+  .data_address:hover {
+    color: #005BFF; }
+
+.data_name p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px; }
+
+.data_btn {
+  border-radius: 30px;
+  color: white;
+  height: 36px;
+  padding: 6px 25px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  transition: all .3s ease-in-out; }
+  .data_btn:hover {
+    opacity: .8;
+    cursor: pointer; }
+  .data_btn img {
+    padding-left: 9px; }
+
+.developer {
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: #005BFF;
+  margin-bottom: 24px; }
+
+.skills_content {
+  display: flex;
+  margin-bottom: 43px; }
+
+.skills_title {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Poppins";
+  color: #5663FF;
+  margin-bottom: 18px; }
+
+.skills_item {
+  font-weight: 300;
+  font-size: 16px;
+  color: #2D2F30;
+  font-family: "Poppins";
+  border: 0.5px solid #000000;
+  border-radius: 16px;
+  padding: 3px 21px;
+  margin-bottom: 6px;
+  background-color: #ffffff;
+  transition: all .3s ease-in-out; }
+  .skills_item:hover {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #2698FF;
+    border: 0.5px solid #2698FF; }
+
+.description_items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 57px; }
+
+.description_title {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #005BFF;
+  margin-bottom: 10px; }
+
+.description_text {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #2D2F30;
+  line-height: 19.2px; }
+  .description_text:hover {
+    color: #5663FF; }
+
+.description_item ul {
+  padding-left: 15px; }
+
+.level {
+  color: #2236A7; }
+  .level:hover {
+    color: #5663FF; }
+
+.gallery_images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 8px;
+  row-gap: 13px; }
+  .gallery_images img:hover {
+    cursor: pointer;
+    opacity: .9; }
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .data_description {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .data_logo {
+    width: 120px;
+    height: 120px; }
+  .data_title {
+    justify-content: left;
+    column-gap: 15px; }
+  .right_bar-content {
+    width: 750px; }
+  .trible {
+    width: 350px;
+    height: 178px; } }
+
+.benefits_title {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Inter";
+  color: #005BFF;
+  margin-bottom: 25px; }
+
+.benefits_items {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 29px;
+  column-gap: 29px;
+  margin-bottom: 38px; }
+
+.benefits_item {
+  display: flex;
+  align-items: center; }
+
+.benefits_name {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #2D2F30;
+  padding-left: 15px; }
+  .benefits_name:hover {
+    color: #005BFF;
+    cursor: pointer; }
+
+.gallery_title {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Inter";
+  color: #005BFF;
+  margin-bottom: 38px; }

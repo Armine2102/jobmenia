@@ -1,0 +1,17 @@
+@import 'global/base';
+@import 'global/fonts';
+@import 'global/mixins';
+@import 'global/variables';
+
+@import 'layouts/header';
+@import 'layouts/footer';
+
+@import 'sections/main';
+@import 'sections/job';
+@import 'sections/popular';
+@import 'sections/companies';
+@import 'sections/consulting';
+@import 'sections/education';
+@import 'sections/showing';
+@import 'sections/bar_content';
+@import 'sections/benefits';
