@@ -1,0 +1,97 @@
+.main {
+  margin-bottom: 28px;
+}
+.main_content {
+  max-width: 865px;
+  margin-left: 20%;
+}
+.main_title {
+  @include title;
+  margin-bottom: 24px;
+}
+.main_btn {
+  font-family: $font;
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 48px;
+  border: 2px solid $color-blue;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  background: transparent;
+  color: $color-grey;
+  transition: all .3s ease-in-out;
+    &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+    cursor: pointer;
+  }
+}
+.find_text {
+  width: 655px;
+  height: 60px;
+  background: $color-white;
+  border: 2px solid $color-blue;
+  border-radius: 16px;
+  &::placeholder {
+    font-size: 22px;
+    color: rgba(45, 47, 48, 0.7);
+    padding-left: 24px;
+    font-family: $font2;
+    display: flex;
+    align-items: center;
+  }
+}
+.find_btn {
+  height: 60px;
+  width: 200px;
+  padding: 9px 38px;
+  font-family: $font2;
+  background: linear-gradient(180deg, #005BFF 0%, #0080FF 100%);
+  border-radius: 16px;
+  border: none;
+  font-weight: 300;
+  font-size: 32px;
+  color: $color-white;
+  margin-left: 14px;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease-in-out;
+  &:hover {
+    opacity: .9;
+    cursor: pointer;
+  }
+}
+.main_find {
+  display: flex;
+  align-items: center;
+  padding-bottom: 61px;
+}
+.job-find {
+  padding-bottom: 28px;
+}
+
+@media (min-width: 1200px) and (max-width: 1429px) {
+    .main_content {
+      margin-left: 15%;
+    }
+
+    .main_title {
+      font-size: 35px;
+    }
+
+    .main_btn {
+      font-size: 20px;
+    }
+
+    .find_text {
+      width: 550px;
+    }
+
+    .find_btn {
+      font-size: 27px;
+    }
+}

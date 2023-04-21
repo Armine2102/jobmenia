@@ -1,0 +1,168 @@
+.consulting_title {
+  @include title;
+  margin-bottom: 39px;
+}
+.consulting_help {
+  width: 1419px;
+  height:67px;
+  background: linear-gradient(180deg, #0064FF 0%, #2698FF 100%);
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+  a {
+    color: $color-white;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: $font2;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: rgb(210, 210, 210);
+    }
+  }
+}
+.consulting_items {
+  display: flex;
+}
+.consulting_content {
+  background: $color-white;
+  border: 2px solid rgba(0, 91, 255, 0.15);
+  border-radius: 16px;
+  width: 350px;
+  height: 350px;
+  margin-right: 14px;
+  margin-bottom: 17px;
+  &:nth-last-child {
+    margin-right: 0;
+  }
+}
+.workplace{
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+.consulting_img {
+  text-align: center;
+  margin-top: -27%;
+  img {
+    transition: all .3s ease-in-out;
+  }
+  img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+}
+.consulting_desc {
+  padding-left: 51px;
+}
+.consulting_name {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: $font2;
+  margin-bottom: 11px;
+}
+.stars span {
+  font-weight: 700;
+  font-size: 12px;
+  font-family: $font2;
+}
+.stars{
+  margin-bottom: 17px;
+  img {
+    margin-right: 6px;
+  }
+}
+.star:active {
+  border: 1px solid $color-blue;
+  border-radius: 50%;
+}
+.star:hover {
+  cursor: pointer;
+}
+.consulting_position{
+  font-weight: 500;
+  font-size: 16px;
+  font-family: $font2;
+  color: $color-white;
+  background-color: #45AAFF;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 17px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    opacity: .9;
+  }
+}
+.consulting_years {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: $font2;
+  width: 250px;
+  background: #1179EF;
+  border-radius: 8px;
+  color: $color-white;
+  text-align: center;
+  margin-bottom: 26px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    opacity: .9;
+  }
+}
+.workplace{
+  img {
+    margin-right: 3px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      border: 2px solid $color-blue;
+      border-radius: 50%;
+    }
+  }
+}
+.consulting_btn {
+  background: $color-purple;
+  border-radius: 30px;
+  width: 350px;
+  height: 50px;
+  border: none;
+  color: $color-white;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: $font2;
+  margin-bottom: 14px;
+  transition: all .3s ease-in-out;
+  &:hover {
+    opacity: .9;
+    cursor: pointer;
+  }
+}
+.discount{
+  font-weight: 400;
+  font-size: 24px;
+  color: $color-purple;
+  font-family: $font2;
+  margin-bottom: 38px;
+}
+@media (min-width: 1200px) and (max-width: 1429px) {
+  .consulting_help {
+    width: 1100px;
+    a {
+      font-size: 35px;
+    }
+  }
+  .consulting_items {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 90px;
+  }
+  .discount {
+    display: flex;
+    justify-content: center;
+  }
+}

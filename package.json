@@ -1,0 +1,20 @@
+{
+  "homepage": "https://armine2102.github.io/jobmenia/",
+  "name": "jobmenia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass dist/scss/style.scss dist/css/style.css -w",
+    "dev": "node-sass dist/scss/style.scss dist/css/style.css",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d dist -b gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "node-sass": "^8.0.0"
+  }
+}
