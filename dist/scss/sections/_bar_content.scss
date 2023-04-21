@@ -189,7 +189,7 @@
     opacity: .9;
   }
 }
-@media (min-width: 1200px) and (max-width: 1429px) {
+@media (max-width: 1430px) {
   .data_description {
     padding-right: 10px;
     padding-left: 10px;
@@ -209,4 +209,7 @@
     width: 350px;
     height: 178px;
   }
+}
+@media  (max-width: 1200px){
+
 }

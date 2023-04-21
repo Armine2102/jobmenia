@@ -74,7 +74,7 @@
   padding-bottom: 28px;
 }
 
-@media (min-width: 1200px) and (max-width: 1429px) {
+@media (max-width: 1430px) {
     .main_content {
       margin-left: 15%;
     }
@@ -94,4 +94,9 @@
     .find_btn {
       font-size: 27px;
     }
+}
+@media  (max-width: 1200px) {
+  .main_content {
+    margin-left: 0;
+  }
 }

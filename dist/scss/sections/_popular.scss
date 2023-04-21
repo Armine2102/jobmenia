@@ -81,12 +81,17 @@
   cursor: pointer;
 }
  /*media*/
-@media (min-width: 1200px) and (max-width: 1429px) {
+@media (max-width: 1430px) {
   .popular_items {
     flex-wrap: wrap;
     justify-content: center;
   }
   .popular_item {
     margin-right: 70px;
+  }
+}
+@media  (max-width: 1200px) {
+  .popular_title {
+    text-align: center;
   }
 }
