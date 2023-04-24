@@ -1077,11 +1077,36 @@
   .education_img {
     margin-right: 20px; }
   .education_centers {
-    width: 720px; } }
+    width: 720px;
+    margin-bottom: 40px; }
+  .center_coupon {
+    font-size: 20px; }
+  .education_btn {
+    width: 170px;
+    font-size: 18px; } }
 
 @media (max-width: 767px) {
   .education_title {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .education_centers {
+    width: 540px; }
+  .education_btn {
+    width: 150px;
+    font-size: 14px; }
+  .center_coupon {
+    font-size: 14px; } }
+
+@media (max-width: 575px) {
+  .education_img {
+    margin-right: 0; }
+  .education_images {
+    justify-content: center;
+    column-gap: 8px; }
+  .education_centers {
+    width: 320px;
+    flex-wrap: wrap;
+    height: 75px;
+    padding: 10px; } }
 
 .showing_items {
   display: flex;

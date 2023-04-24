@@ -25,12 +25,13 @@ function currentSlide(idx, n) {
 
 function showSlides(idx, n) {
     let i;
-    let slides = document.getElementsByClassName(sliders[idx].slidesClass);
+    let slides = document.getElementsByClassName(sliders[idx].slidesClass + (window.screen.availWidth <= 991 ? ' mobile' : ''));
     let dots = document.getElementsByClassName(sliders[idx].dotsClass);
 
     if (n > slides.length) {
         slideIndex = 1
     }
+
     if (n < 1) {
         slideIndex = slides.length
     }
@@ -46,13 +47,6 @@ function showSlides(idx, n) {
     slides[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " active";
 }
-
-
-
-
-
-
-
 
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
