@@ -182,7 +182,7 @@
   row-gap: 10px;
 }
   .job_card-homepage {
-    width: 465px;
+    width: 500px;
   }
   .job_title {
     text-align: center;
@@ -195,5 +195,29 @@
   .job_content.mobile {
     display: flex;
   }
-
+  .job_card-homepage {
+    padding: 21px 70px;
+  }
+}
+@media (max-width: 767px) {
+  .job_card-homepage {
+    width: 400px;
+    padding: 18px 45px;
+    margin: auto;
+  }
+}
+@media (max-width: 450px){
+  .job_card-homepage {
+    width: 300px;
+    padding: 15px;
+    height: 195px;
+  }
+  .skill  {
+    margin-right: 15px;
+  }
+  .job_desc {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
 }
