@@ -70,28 +70,100 @@
   align-items: center;
   padding-bottom: 61px;
 }
-.job-find {
-  padding-bottom: 28px;
-}
-
-@media (min-width: 1200px) and (max-width: 1429px) {
-    .main_content {
-      margin-left: 15%;
-    }
-
+@media (max-width: 1430px) {
     .main_title {
       font-size: 35px;
     }
-
     .main_btn {
       font-size: 20px;
     }
-
-    .find_text {
+    .find_text-job {
       width: 550px;
     }
-
     .find_btn {
       font-size: 27px;
     }
+    .main_content {
+      margin-left: 0;
+    }
+}
+@media  (max-width: 1199px) {
+  .main_title {
+    font-size: 30px;
+  }
+  .main_btn {
+    padding: 12px 45px
+  }
+  .find_text {
+    width: 600px;
+  }
+  .find_btn {
+    font-size: 25px;
+    height: 58px;
+    width: 173px;
+}
+}
+@media (max-width: 991px) {
+  .main_content {
+    padding-top: 70px;
+  }
+  .main_title {
+    font-size: 25px;
+  }
+  .main_btn {
+    padding: 12px 39px;
+    font-size: 18px;
+  }
+  .find_text {
+    width: 450px;
+  }
+  .find_btn {font-size: 19px;
+  height: 60px;
+  width: 153px;
+}
+.find_text::placeholder {
+  font-size: 20px;
+}
+}
+@media (max-width: 767px) {
+  .find_text::placeholder {
+    font-size: 16px;
+  }
+  .find_text {
+    width: 380px;
+    height: 55px;
+  }
+  .find_btn {
+    font-size: 14px;
+    height: 55px;
+    width: 138px;
+  }
+}
+@media (max-width: 575px) {
+  .main {
+    padding-left: 3%;
+  }
+  .main_title {
+    font-size: 20px;
+  }
+  .main_btn {
+    padding: 12px 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .main_find {
+    flex-wrap: wrap;
+    column-gap: 34px;
+  }
+  .find_text::placeholder {
+    font-size: 14px;
+  }
+  .find_text {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .find_btn {
+    margin-left: 0;
+    font-size: 16px;
+  }
 }

@@ -46,7 +46,7 @@
     cursor: pointer;
   }
 }
-@media (min-width: 1200px) and (max-width: 1429px) {
+@media (max-width: 1430px) {
   .education_images {
     flex-wrap: wrap;
     row-gap: 30px;
@@ -60,4 +60,32 @@
   .center_coupon {
     font-size: 30px;
   }
+}
+@media  (max-width: 1199px){
+  .education_title {
+    text-align: center;
+  }
+  .education_centers {
+    width: 960px;
+  }
+  .education_btn {
+    width: 210px;
+    font-size: 20px;
+  }
+}
+@media  (max-width: 991px){
+  .education_img {
+    margin-right: 20px;
+  }
+  .education_centers {
+    width: 720px;
+  }
+}
+@media (max-width: 767px) {
+ .education_title {
+  font-size: 30px;
+ }
+}
+@media (max-width: 575px) {
+  
 }
