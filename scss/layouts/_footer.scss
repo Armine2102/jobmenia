@@ -112,13 +112,13 @@
     text-decoration: none;
     font-size: 14px;
     font-family: none;
-    color: $color-black1;
+    color: #2e323b;
     margin-top: 10px;
-    border-bottom: 1px solid $color-black1;
     font-family: $font;
     }
     .footer_links {
-      padding-left: 3%;
+      display: none;
+      padding-left: 5%;
     }
     .collapsible {
       cursor: pointer;

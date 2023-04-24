@@ -295,12 +295,12 @@
     text-decoration: none;
     font-size: 14px;
     font-family: none;
-    color: #2D2F30;
+    color: #2e323b;
     margin-top: 10px;
-    border-bottom: 1px solid #2D2F30;
     font-family: "Inter"; }
   .footer_links {
-    padding-left: 3%; }
+    display: none;
+    padding-left: 5%; }
   .collapsible {
     cursor: pointer;
     background-color: transparent;
@@ -1263,12 +1263,18 @@
   justify-content: space-around;
   align-items: center;
   font-family: "Poppins";
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  column-gap: 40px; }
+
+.showing_content {
+  display: flex;
+  column-gap: 32px; }
 
 .showing_text {
   font-weight: 400;
   font-size: 28px;
-  color: #000000; }
+  color: #2D2F30;
+  font-family: "Poppins"; }
   .showing_text span {
     color: #0060FF;
     font-weight: 600; }
@@ -1276,7 +1282,7 @@
 .showing_links {
   border: 1px solid #2D2F30;
   border-radius: 16px;
-  padding: 5px 15px; }
+  padding: 5px 30px; }
   .showing_links:hover {
     cursor: pointer;
     background-color: #2698FF;
@@ -1306,6 +1312,26 @@
   color: #ffffff; }
 
 /*media*/
+@media (max-width: 1430px) {
+  .showing_links {
+    padding: 5px 15px; }
+  .showing_items {
+    column-gap: 27px; } }
+
+@media (max-width: 1199px) {
+  .showing_items {
+    column-gap: 5px; }
+  .showing_content {
+    column-gap: 10px; }
+  .showing_text {
+    font-size: 24px; } }
+
+@media (max-width: 991px) {
+  .showing_items {
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 5px; } }
+
 .job_card {
   position: relative; }
 
@@ -1495,6 +1521,19 @@
   .trible {
     width: 350px;
     height: 178px; } }
+
+@media (max-width: 1199px) {
+  .bar_content {
+    flex-wrap: wrap-reverse; }
+  .right_bar {
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .left_bar-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .left_bar {
+    margin: 0 auto; } }
 
 .benefits_title {
   font-weight: 700;
