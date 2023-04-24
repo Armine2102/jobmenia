@@ -132,9 +132,7 @@
       color: $color-white;
       font-weight: 550;
       border-bottom: 2px solid $color-white;
-      .active, .collapsible:active {
-        color: $color-black;
-      }
+      
     }
     .subscribe-mobile {
       display: flex;
@@ -151,6 +149,15 @@
     .group_mobile {
       font-size: 14px;
       padding-left: 20%;
+  }
+  .footer_btn_mobile {
+    color: $color-white;
+    background-color: #75C1FF;
+    border: 2px solid $color-white;
+    &:active {
+      color: #75C1FF;
+      background-color: $color-white; 
+    }
   }
   }       
   @media (max-width: 575px){

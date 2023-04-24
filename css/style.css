@@ -313,8 +313,6 @@
     color: #ffffff;
     font-weight: 550;
     border-bottom: 2px solid #ffffff; }
-    .collapsible .active, .collapsible .collapsible:active {
-      color: #000000; }
   .subscribe-mobile {
     display: flex;
     align-items: center;
@@ -326,7 +324,14 @@
     margin-top: 10px; }
   .group_mobile {
     font-size: 14px;
-    padding-left: 20%; } }
+    padding-left: 20%; }
+  .footer_btn_mobile {
+    color: #ffffff;
+    background-color: #75C1FF;
+    border: 2px solid #ffffff; }
+    .footer_btn_mobile:active {
+      color: #75C1FF;
+      background-color: #ffffff; } }
 
 @media (max-width: 575px) {
   .social_mobile {
@@ -673,7 +678,9 @@
   .job_card-homepage {
     width: 400px;
     padding: 18px 45px;
-    margin: auto; } }
+    margin: auto; }
+  .job_title {
+    font-size: 30px; } }
 
 @media (max-width: 450px) {
   .job_card-homepage {
