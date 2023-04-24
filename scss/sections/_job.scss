@@ -146,6 +146,9 @@
 .job_content.mobile{
   display: none;
 }
+.job_cards.mobile {
+  display: none;
+}
 @media (max-width: 1430px) {
   .company_name {
     font-size: 14px;
