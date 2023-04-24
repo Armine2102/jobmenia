@@ -22,7 +22,7 @@
     width: 1100px;
   }
 }
-@media  (max-width: 1200px){
+@media  (max-width: 1199px){
   .container {
     width: 960px;
   }
@@ -30,5 +30,15 @@
 @media  (max-width: 991px){
   .container {
     width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
   }
 }

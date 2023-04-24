@@ -210,6 +210,23 @@
     height: 178px;
   }
 }
-@media  (max-width: 1200px){
-
+@media  (max-width: 1199px){
+  .bar_content {
+    flex-wrap: wrap-reverse;
+  }
+  .right_bar {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .left_bar-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .left_bar {
+    margin: 0 auto;
+  }
+}
+@media  (max-width: 991px){
+  
 }

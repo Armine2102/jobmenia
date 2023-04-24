@@ -79,6 +79,9 @@
     cursor: pointer;
   }
 }
+.companies_content.mobile {
+  display: none;
+}
 @media (max-width: 1430px) {
   .companies_img {
     width: 80px;
@@ -100,7 +103,7 @@
     height: 155px;
   }
 }
-@media  (max-width: 1200px){
+@media  (max-width: 1199px){
   .companies_items {
     flex-wrap: wrap;
     justify-content: center;
@@ -124,4 +127,72 @@
   .companies_title {
     text-align: center;
   }
+}
+@media (max-width: 991px) {
+  .companies_content {
+    display: none;
+  }
+  .companies_content.mobile {
+    display: block;
+  }
+  .companies_items .companies_item {
+    width: 500px;
+    padding-left: 18%;
+}
+  .companies_img {
+    width: 100px;
+    height: 100px;
+  }
+  .companies_name {
+    margin-bottom: 15px;
+  }
+.fa-chevron-right {
+ right: 9%;
+}
+}
+@media (max-width: 767px) {
+  .companies_title {
+    font-size: 30px;
+  }
+  .companies_items .companies_item {
+    width: 400px;
+    padding: 22px 44px;
+    padding-left: 14%;
+  }
+}
+@media (max-width: 575px) {
+  .companies_items .companies_item {
+    width: 400px;
+    padding-left: 11%;
+    padding: 32px 18px;
+    padding-left: 5%;
+    margin: auto;
+  }
+  .companies_img {
+    width: 80px;
+    height: 80px;
+}
+.companies_name  {
+  margin-bottom: 2px;
+}
+.active_jobs {
+  margin-bottom: 11px;
+}
+.fa-chevron-right {
+  right: 3px;
+}
+.fa-chevron-left {
+ left:0;
+}
+}
+@media (max-width: 450px) {
+  .companies_items .companies_item {
+  width: 300px;
+}
+.fa-chevron-left {
+  padding: 5px 8px;
+}
+.fa-chevron-right {
+  padding: 5px 8px;
+}
 }

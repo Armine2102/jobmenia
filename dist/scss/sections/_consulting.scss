@@ -166,7 +166,7 @@
     justify-content: center;
   }
 }
-@media  (max-width: 1200px){
+@media  (max-width: 1199px){
   .consulting_title {
     text-align: center;
   }
@@ -177,3 +177,60 @@
     }
   }
 }
+@media  (max-width: 991px){
+  .consulting_help {
+    width: 720px;
+    margin-bottom: 105px;
+}
+.consulting_help a {
+  font-size: 25px;
+}
+}
+@media (max-width: 767px) {
+  .consulting_help {
+    width: 540px;
+  }
+  .consulting_title {
+    font-size: 30px;
+  }
+  .consulting_help a {
+    font-size: 19px;
+  }
+  .discount {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .consulting_help {
+    width: 320px;
+    margin: 39px auto 105px;
+}
+.consulting_help a {
+  font-size: 12px;
+}
+.consulting_content {
+  width: 300px;
+  height: 350px;
+
+  margin-right: 0;
+}
+.consulting_desc {
+  padding-left: 20px;
+}
+.consulting_name {
+  margin-bottom: 3px;
+}
+.stars {
+  margin-bottom: 7px;
+}
+.consulting_position {
+  margin-bottom: 7px;
+}
+.consulting_years {
+  margin-bottom: 7px;
+}
+.consulting_btn {
+  width: 300px;
+}
+}
+

@@ -143,6 +143,12 @@
   animation-name: fade;
   animation-duration: 2s;
 }
+.job_content.mobile{
+  display: none;
+}
+.job_cards.mobile {
+  display: none;
+}
 @media (max-width: 1430px) {
   .company_name {
     font-size: 14px;
@@ -169,14 +175,14 @@
     left: -18px
   }
 }
-@media  (max-width: 1200px) {
+@media  (max-width: 1199px) {
 .job_cards {
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 10px;
 }
   .job_card-homepage {
-    width: 465px;
+    width: 500px;
   }
   .job_title {
     text-align: center;
@@ -189,5 +195,32 @@
   .job_content.mobile {
     display: flex;
   }
-
+  .job_card-homepage {
+    padding: 21px 70px;
+  }
+}
+@media (max-width: 767px) {
+  .job_card-homepage {
+    width: 400px;
+    padding: 18px 45px;
+    margin: auto;
+  }
+  .job_title{
+    font-size: 30px;
+  }
+}
+@media (max-width: 450px){
+  .job_card-homepage {
+    width: 300px;
+    padding: 15px;
+    height: 195px;
+  }
+  .skill  {
+    margin-right: 15px;
+  }
+  .job_desc {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+  }
 }

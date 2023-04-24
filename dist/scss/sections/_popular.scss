@@ -90,8 +90,28 @@
     margin-right: 70px;
   }
 }
-@media  (max-width: 1200px) {
+@media  (max-width: 1199px) {
   .popular_title {
     text-align: center;
   }
+}
+@media  (max-width: 991px){
+ 
+}
+@media (max-width: 767px) {
+  .popular_item {
+    margin-right: 40px;
+   }
+   .popular_title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .popular_fon {
+    width: 130px;
+    height: 130px;
+  }
+ .popular_item {
+  margin-right: 20px;
+ }
 }

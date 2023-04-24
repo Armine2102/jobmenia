@@ -25,49 +25,45 @@ function currentSlide(idx, n) {
 
 function showSlides(idx, n) {
     let i;
-    let slides = document.getElementsByClassName(sliders[idx].slidesClass);
+    let slides = document.getElementsByClassName(sliders[idx].slidesClass + (window.screen.availWidth <= 991 ? ' mobile' : ''));
     let dots = document.getElementsByClassName(sliders[idx].dotsClass);
 
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
+   if (slides.length) {
+        if (n > slides.length) {
+            slideIndex = 1
+        }
 
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
 
-    slides[slideIndex - 1].style.display = "flex";
-    dots[slideIndex - 1].className += " active";
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " active";
+   }
 }
 
-
-
-
-
-
-
-
 window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.header_menu'),
-        menuItem = document.querySelectorAll('.header_nav-menu__list-item'),
-        hamburger = document.querySelector('.nav_toggle');
+    const menu = document.querySelector('.menu'),
+    menuItem = document.querySelectorAll('.nav-menu__list-item'),
+    hamburger = document.querySelector('.nav_toggle');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('nav_toggle_active');
-        menu.classList.toggle('header_menu_active');
+        menu.classList.toggle('menu_active');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('nav_toggle_active');
-            menu.classList.toggle('header_menu_active');
+            menu.classList.toggle('menu_active');
         })
     })
 

@@ -16,35 +16,17 @@
 <div class="wrapper">
     <div class="container">
     <header class="header">
-            <div class="header_content">
-                <div class="header_logo">
-                    <img src="img/logo.png" class="logo_img" alt="">
-                </div>
-                <nav class="header_nav">
-                    <ul class="header_items">
-                        <li class="header_item">
-                            <a href="javascript:" class="header_link">Mind test</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="javascript:" class="header_link">Search Jobs</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="javascript:" class="header_link">Job Alerts</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="javascript:" class="header_link">Employers</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="javascript:" class="header_link header_link--btn">Login</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="javascript:" class="header_link header_link--btn">Register your CV</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="javascript:" class="header_link header_link--btn">For companies</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="header_menu">
+                    <a href="index.html" class="logo_link"><img src="img/logo.png" class="logo_img" alt=""></a>
+                    <nav class="menu ">
+                        <a href="javascript:" class="nav_link">Mind test</a>
+                        <a href="javascript:" class="nav_link">Search Jobs</a>
+                        <a href="javascript:" class="nav_link">Job Alerts</a>
+                        <a href="javascript:" class="nav_link">Employers</a>
+                        <a href="javascript:" class="nav_link nav_link--btn">Login</a>
+                        <a href="javascript:" class="nav_link nav_link--btn">Register your CV</a>
+                        <a href="javascript:" class="nav_link nav_link--btn">For companies</a>
+                    </nav>
                 <div class="nav_toggle">
                     <span></span>
                     <span></span>
@@ -136,7 +118,7 @@
                     </a>
                 </div>
             </div>
-            <div class="job_cards job_card-homepage">
+            <div class="job_cards">
                 <div class="job_card job_card-homepage">
                     <a href="job-page.html" target="blank">
                         <div class="company_desc">
@@ -269,14 +251,8 @@
             <a href="javascript:" onclick="plusSlides(1, -1)"> <i class="fa-solid fa-chevron-left"></i> </a>
             <a href="javascript:" onclick="plusSlides(1, 1)"> <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-
-
-
-
         <div class="job_content mobile">
-            <div class="job_cards">
-
-
+            <div class="job_cards mobile">
                 <div class="job_card job_card-homepage">
                     <a href="job-page.html" target="blank">
                         <div class="company_desc">
@@ -299,7 +275,7 @@
                     </a>
                 </div>
             </div>
-            <div class="job_cards job_card-homepage">
+            <div class="job_cards mobile">
 
                 <div class="job_card job_card-homepage">
                     <a href="job-page.html" target="blank">
@@ -323,7 +299,7 @@
                     </a>
                 </div>
             </div>
-            <div class="job_cards">
+            <div class="job_cards mobile">
 
                 <div class="job_card job_card-homepage">
                     <a href="job-page.html" target="blank">
@@ -350,13 +326,6 @@
             <a href="javascript:" onclick="plusSlides(1, -1)"> <i class="fa-solid fa-chevron-left"></i> </a>
             <a href="javascript:" onclick="plusSlides(1, 1)"> <i class="fa-solid fa-chevron-right"></i></a>
         </div>
-
-
-
-
-
-
-
         <div class="slider-links">
             <a href="javascript:" class="slider-link" onclick="currentSlide(1, 1)"></a>
             <a href="javascript:" class="slider-link" onclick="currentSlide(1, 2)"></a>
@@ -476,7 +445,7 @@
                     </div>
                 </div>
             </div>
-            <div class="companies_items ">
+            <div class="companies_items">
                 <div class="companies_item">
                     <img src="img/companies/4.png" alt="companies-logo" class="companies_img">
                     <div class="companies_desc">
@@ -563,6 +532,51 @@
                         <div class="active_jobs">
                             <img src="img/companies/green.png" alt="active">
                             <a href="javascript:" class="active_jobs-link">Active jobs 14</a>
+                        </div>
+                        <button class="companies_btn">View all</button>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:" onclick="plusSlides(2, 1)"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+
+
+        <div class="companies_content mobile">
+            <a href="javascript:" onclick="plusSlides(2, -1)"> <i class="fa-solid fa-chevron-left"></i> </a>
+            <div class="companies_items mobile">
+                <div class="companies_item">
+                    <img src="img/companies/1.png" alt="companies-logo" class="companies_img">
+                    <div class="companies_desc">
+                        <h4 class="companies_name">Soft Construct</h4>
+                        <div class="active_jobs">
+                            <img src="img/companies/green.png" alt="active">
+                            <a href="javascript:" class="active_jobs-link">Active jobs 41</a>
+                        </div>
+                        <button class="companies_btn">View all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="companies_items mobile">
+                <div class="companies_item">
+                    <img src="img/left-bar/2.png" alt="companie-logo" class="companies_img">
+                    <div class="companies_desc">
+                        <h4 class="companies_name">ACA</h4>
+                        <div class="active_jobs">
+                            <img src="img/companies/green.png" alt="active">
+                            <a href="javascript:" class="active_jobs-link">Active jobs 14</a>
+                        </div>
+                        <button class="companies_btn">View all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="companies_items mobile">
+                <div class="companies_item">
+                    <img src="img/companies/3.png" alt="companies-logo" class="companies_img">
+                    <div class="companies_desc">
+                        <h4 class="companies_name">Soft Construct</h4>
+                        <div class="active_jobs">
+                            <img src="img/companies/green.png" alt="active">
+                            <a href="javascript:" class="active_jobs-link">Active jobs 41</a>
                         </div>
                         <button class="companies_btn">View all</button>
                     </div>
@@ -784,6 +798,75 @@
         <div class="copyright">
             <p class="copyright_text">© 2022 | All Rights Reserved.</p>
             <p class="group">Created with love by JJA Group</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<footer class="footer_mobile">
+    <div class="container">
+        <button type="button" class="collapsible">For Jobseekers</button>
+        <div class="footer_links">
+            <a href="javascript:" class="footer_link-mobile">Search Jobs</a>
+            <a href="javascript:" class="footer_link-mobile">Register</a>
+            <a href="javascript:" class="footer_link-mobile">Job Alerts</a>
+            <a href="javascript:" class="footer_link-mobile">Career Advice</a>
+            <a href="javascript:" class="footer_link-mobile">Mind test</a>
+        </div>
+        <button type="button" class="collapsible    ">Popular</button>
+        <div class="footer_links">
+            <a class="footer_link-mobile" href="javascript:">Search Jobs</a>
+            <a class="footer_link-mobile" href="javascript:">Imployers</a>
+            <a class="footer_link-mobile" href="javascript:">Agencies</a>
+        </div>
+        <button type="button" class="collapsible">Recruiters</button>
+        <div class="footer_links">
+            <a href="javascript:" class="footer_link-mobile">CV Database Access</a>
+            <a href="javascript:" class="footer_link-mobile">Advertise Jobs</a>
+            <a href="javascript:" class="footer_link-mobile">Search CVs</a>
+            <a href="javascript:" class="footer_link-mobile">Test CV Search</a>
+            <a href="javascript:" class="footer_link-mobile">Salary Database Access</a>
+        </div>
+        <button type="button" class="collapsible">About thecreation</button>
+        <div class="footer_links">
+            <a href="javascript:" class="footer_link-mobile">About Us</a>
+            <a href="javascript:" class="footer_link-mobile">Contact Us</a>
+            <a href="javascript:" class="footer_link-mobile">Work for Us</a>
+            <a href="javascript:" class="footer_link-mobile">Help</a>
+            <a href="javascript:" class="footer_link-mobile">FAQ</a>
+        </div>
+        <button type="button" class="collapsible">Recruiters</button>
+        <div class="footer_links">
+            <a href="javascript:" class="footer_link-mobile">CV Database Access</a>
+            <a href="javascript:" class="footer_link-mobile">Advertise Jobs</a>
+            <a href="javascript:" class="footer_link-mobile">Search CVs</a>
+            <a href="javascript:" class="footer_link-mobile">Test CV Search</a>
+            <a href="javascript:" class="footer_link-mobile">Salary Database Access</a>
+        </div>
+
+       <div class="subscribe-mobile">
+            <button class="footer_btn footer_btn_mobile">Subscribe</button>
+            <div class="social social_mobile">
+                <a href="javascript:" class="social_link">
+                    <img src="img/footer/facebook.png" alt="facebook">
+                </a>
+                <a href="javascript:" class="social_link">
+                    <img src="img/footer/vk.png" alt="facebook">
+                </a>
+                <a href="javascript:" class="social_link">
+                    <img src="img/footer/youtube.png" alt="facebook">
+                </a>
+                <a href="javascript:" class="social_link">
+                    <img src="img/footer/instagram.png" alt="facebook">
+                </a>
+            </div>
+        </div>
+      
+        <div class="copyright copyright_mobile">
+            <p class="copyright_text">© 2022 | All Rights Reserved.</p>
+            <p class="group group_mobile">Created with love by JJA Group</p>
         </div>
     </div>
 </footer>
