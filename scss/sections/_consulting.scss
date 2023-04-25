@@ -221,7 +221,7 @@ input:checked + label ~ label {
 }
 
 
-@media (max-width: 1430px) {
+@media screen and (max-width: 1430px) {
   .consulting_help {
     width: 1100px;
 
@@ -241,7 +241,7 @@ input:checked + label ~ label {
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .consulting_title {
     text-align: center;
   }
@@ -254,7 +254,7 @@ input:checked + label ~ label {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .consulting_help {
     width: 720px;
     margin-bottom: 105px;
@@ -264,7 +264,7 @@ input:checked + label ~ label {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .consulting_help {
     width: 540px;
   }
@@ -279,7 +279,7 @@ input:checked + label ~ label {
   }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .consulting_help {
     width: 320px;
     margin: 39px auto 105px;

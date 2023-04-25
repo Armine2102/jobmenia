@@ -80,7 +80,7 @@
   padding-bottom: 61px;
 }
 
-@media (max-width: 1430px) {
+@media screen and (max-width: 1430px) {
   .main_title {
     font-size: 35px;
   }
@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .main_title {
     font-size: 30px;
   }
@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .main_content {
     padding-top: 70px;
   }
@@ -139,7 +139,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .find_text::placeholder {
     font-size: 16px;
   }
@@ -154,7 +154,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .main {
     padding-left: 3%;
   }

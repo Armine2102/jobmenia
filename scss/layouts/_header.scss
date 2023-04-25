@@ -54,7 +54,7 @@
 }
 
 /*media*/
-@media (max-width: 1430px) {
+@media screen and (max-width: 1430px) {
   .header_menu {
     flex-wrap: wrap;
   }
@@ -79,7 +79,7 @@
   }
 
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .header_menu {
     position: fixed;
     z-index: 999;
@@ -166,12 +166,12 @@
 
 }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu .nav_link {
     font-size: 25px;
   }
 }
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .logo_img {
     width: 165px;
 }

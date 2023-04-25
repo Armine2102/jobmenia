@@ -97,7 +97,7 @@
 }
 
 /*media*/
-@media (max-width: 1430px) {
+@media screen and (max-width: 1430px) {
   .popular_items {
     flex-wrap: wrap;
     justify-content: center;
@@ -107,17 +107,17 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .popular_title {
     text-align: center;
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .popular_item {
     margin-right: 40px;
   }
@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .popular_fon {
     width: 130px;
     height: 130px;
