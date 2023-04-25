@@ -136,8 +136,7 @@
     background-color: #75C1FF;
     width: 100%;
     z-index: 20;
-    transition: .2s all;
-    row-gap: 30px; }
+    transition: .2s all; }
   .nav_toggle {
     width: 40px;
     display: block;
