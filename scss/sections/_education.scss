@@ -2,15 +2,18 @@
   @include title;
   margin-bottom: 35px;
 }
+
 .education_images {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
 }
+
 .education_img:hover {
   opacity: .9;
   cursor: pointer;
-  }
+}
+
 .education_centers {
   width: 1419px;
   height: 67px;
@@ -21,12 +24,14 @@
   align-items: center;
   margin-bottom: 105px;
 }
+
 .center_coupon {
   font-weight: 300;
   font-size: 40px;
   font-family: $font2;
   color: $color-white;
 }
+
 .education_btn {
   width: 228px;
   height: 36px;
@@ -39,6 +44,7 @@
   font-family: $font2;
   color: $color-purple;
   transition: all .3s ease-in-out;
+
   &:hover {
     background-color: $color-purple;
     color: $color-white;
@@ -46,6 +52,7 @@
     cursor: pointer;
   }
 }
+
 @media (max-width: 1430px) {
   .education_images {
     flex-wrap: wrap;
@@ -61,7 +68,8 @@
     font-size: 30px;
   }
 }
-@media  (max-width: 1199px){
+
+@media (max-width: 1199px) {
   .education_title {
     text-align: center;
   }
@@ -74,7 +82,8 @@
     font-size: 20px;
   }
 }
-@media  (max-width: 991px){
+
+@media (max-width: 991px) {
   .education_img {
     margin-right: 20px;
   }
@@ -84,26 +93,27 @@
   }
   .center_coupon {
     font-size: 20px;
-   }
-   .education_btn {
+  }
+  .education_btn {
     width: 170px;
     font-size: 18px;
+  }
 }
-}
+
 @media (max-width: 767px) {
- .education_title {
-  font-size: 30px;
- }
- .education_centers {
-  width: 540px;
-}
-.education_btn {
-  width: 150px;
-  font-size: 14px;
-}
-.center_coupon {
-  font-size: 14px;
-}
+  .education_title {
+    font-size: 30px;
+  }
+  .education_centers {
+    width: 540px;
+  }
+  .education_btn {
+    width: 150px;
+    font-size: 14px;
+  }
+  .center_coupon {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -124,4 +134,4 @@
   .education_btn {
     margin: auto;
   }
-  }
+}

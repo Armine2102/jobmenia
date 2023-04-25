@@ -1,40 +1,55 @@
 .job {
   margin-bottom: 28px;
 }
+
 .job_title {
   @include title;
   margin-bottom: 38px;
 }
-.job_cards {
-  display: none;
+
+.job_content {
   position: relative;
-  margin-bottom: 23px;
-  &.active {
-    display: flex;
+  display: flex;
+  justify-content: center;
+
+  .slides {
+    display: none;
+    position: relative;
+    margin-bottom: 23px;
+
+    &.active {
+      display: flex;
+    }
+
+    .slide-item {
+      background: $color-white;
+      border: 2px solid rgba(0, 91, 255, 0.15);
+      border-radius: 16px;
+      width: 450px;
+      height: 178px;
+      padding: 22px 65px;
+      margin-right: 20px;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        border: 2px solid $color-blue;
+      }
+
+      &:nth-last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
-.job_card {
-  background: $color-white;
-  border: 2px solid rgba(0, 91, 255, 0.15);
-  border-radius: 16px;
-  width: 450px;
-  height: 178px;
-  padding: 22px 65px;
-  margin-right: 20px;
-  transition: all .3s ease-in-out;
-  &:hover {
-    border: 2px solid $color-blue;
-  }
-  &:nth-last-child {
-    margin-right: 0;
-  }
-}
+
 .company_desc {
   display: flex;
+
   img {
     margin-bottom: 15px;
   }
 }
+
 .company_name {
   font-weight: 700;
   font-size: 16px;
@@ -43,6 +58,7 @@
   margin-bottom: 7px;
   font-family: $font;
 }
+
 .company_address {
   font-weight: 500;
   font-size: 12px;
@@ -50,13 +66,16 @@
   padding-left: 6px;
   font-family: $font;
 }
+
 .company_map {
   display: flex;
+
   img {
     width: 7px;
     height: 9px;
   }
 }
+
 .salary {
   font-weight: 700;
   font-size: 16px;
@@ -64,6 +83,7 @@
   margin-bottom: 16.18px;
   font-family: $font;
 }
+
 .skill {
   font-weight: 400;
   font-size: 14px;
@@ -74,18 +94,16 @@
   margin-right: 8px;
   font-family: $font2;
   transition: all .3s ease-in-out;
-  &:nth-last-child{
+
+  &:nth-last-child {
     margin-right: 0;
   }
+
   &:hover {
-    opacity:.8;
+    opacity: .8;
   }
 }
-.job_content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
+
 .fa-chevron-left {
   position: absolute;
   color: $color-white;
@@ -99,6 +117,7 @@
   user-select: none;
   left: 0;
 }
+
 .fa-chevron-right {
   position: absolute;
   color: $color-white;
@@ -112,10 +131,12 @@
   user-select: none;
   right: 17px;
 }
+
 .slider-links {
   width: 100%;
   text-align: center;
 }
+
 .slider-link, .companies-slider-link {
   width: 6px;
   height: 6px;
@@ -123,37 +144,45 @@
   border-radius: 4px;
   display: inline-block;
 }
+
 .slider-link.active,
 .companies-slider-link.active {
   width: 25px;
   background-color: $color-blue;
 }
-.job_cards {
+
+.slides {
   animation-name: fade;
   animation-duration: 2s;
 }
 
 @keyframes fade {
-  from
-  {opacity: .6}
-  to
-  {opacity: 1}
+  from {
+    opacity: .6
+  }
+  to {
+    opacity: 1
+  }
 }
+
 .companies_items {
   animation-name: fade;
   animation-duration: 2s;
 }
-.job_content.mobile{
+
+.job_content.mobile {
   display: none;
 }
+
 .job_cards.mobile {
   display: none;
 }
+
 @media (max-width: 1430px) {
   .company_name {
     font-size: 14px;
   }
-  .job_card {
+  .job_content .slides .slide-item {
     padding: 15px 25px;
     width: 350px;
   }
@@ -175,19 +204,21 @@
     left: -18px
   }
 }
-@media  (max-width: 1199px) {
-.job_cards {
-  flex-wrap: wrap;
-  justify-content: center;
-  row-gap: 10px;
-}
-  .job_card-homepage {
+
+@media (max-width: 1199px) {
+  .slides {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .job_content .slides .job_card-homepage {
     width: 500px;
   }
   .job_title {
     text-align: center;
   }
 }
+
 @media (max-width: 991px) {
   .job_content {
     display: none
@@ -198,24 +229,30 @@
   .job_card-homepage {
     padding: 21px 70px;
   }
+  .job_card-job-page {
+    width: 330px;
+    padding: 14px 16px;
+  }
 }
+
 @media (max-width: 767px) {
-  .job_card-homepage {
+  .job_content .slides .job_card-homepage {
     width: 400px;
     padding: 18px 45px;
     margin: auto;
   }
-  .job_title{
+  .job_title {
     font-size: 30px;
   }
 }
-@media (max-width: 450px){
-  .job_card-homepage {
+
+@media (max-width: 450px) {
+  .job_content .slides .job_card-homepage {
     width: 300px;
     padding: 15px;
     height: 195px;
   }
-  .skill  {
+  .skill {
     margin-right: 15px;
   }
   .job_desc {
