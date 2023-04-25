@@ -168,8 +168,13 @@
 @media screen and (max-width: 767px) {
   .menu .nav_link {
     font-size: 20px;
-    display: flex;
-    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .header .menu {
+    width: 100%;
+  }
+  .menu .nav_link--btn {
+    width: 40%;
   }
 }
 @media screen and (max-width: 575px) {
