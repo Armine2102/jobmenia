@@ -2,6 +2,7 @@
   @include title2;
   margin-bottom: 25px;
 }
+
 .benefits_items {
   display: grid;
   grid-template-columns: auto auto;
@@ -9,25 +10,32 @@
   column-gap: 29px;
   margin-bottom: 38px;
 }
+
 .benefits_item {
   display: flex;
   align-items: center;
 }
+
 .benefits_name {
   font-weight: 600;
   font-size: 16px;
   font-family: $font2;
   color: $color-black1;
   padding-left: 15px;
+
   &:hover {
     color: $color-blue;
     cursor: pointer;
   }
 }
+
 .gallery_title {
   @include title2;
   margin-bottom: 38px;
 }
-@media  (max-width: 1199px){
 
+@media (max-width: 575px) {
+  .benefits_items {
+    grid-template-columns: auto;
+  }
 }

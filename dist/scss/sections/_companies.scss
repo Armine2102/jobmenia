@@ -2,56 +2,61 @@
   @include title;
   margin-bottom: 39px;
 }
+
 .companies_content {
   display: flex;
   justify-content: center;
   position: relative;
-}
-/*.companies_items {
-  display: flex;
-  position: relative;
-  margin-bottom: 23px;
-}*/
-.companies_items {
-  display: none;
-  position: relative;
-  margin-bottom: 23px;
-  &.active {
+
+  .slides {
+    display: none;
+    position: relative;
+    margin-bottom: 23px;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  .slide-item {
+    width: 335px;
+    height: 178px;
+    border: 2px solid rgba(0, 91, 255, 0.15);
+    background-color: $color-white;
+    border-radius: 16px;
     display: flex;
+    padding: 36px 14px;
+    margin-right: 17px;
+
+    &:nth-last-child {
+      margin-right: 0;
+    }
   }
 }
-.companies_item {
-  width: 335px;
-  height: 178px;
-  border: 2px solid rgba(0, 91, 255, 0.15);
-  background-color: $color-white;
-  border-radius: 16px;
-  display: flex;
-  padding: 36px 14px;
-  margin-right: 17px;
-  &:nth-last-child{
-    margin-right: 0;
-  }
-}
+
 .companies_desc {
   margin-left: 16px;
 }
+
 .companies_img {
   width: 110px;
   height: 110px;
 }
+
 .companies_name {
   font-weight: 600;
   font-size: 24px;
   font-family: $font2;
   margin-top: -6px;
 }
+
 .active_jobs {
   display: flex;
   align-items: center;
   margin-bottom: 18px;
   margin-top: -5px;
 }
+
 .active_jobs-link {
   font-weight: 300;
   font-size: 16px;
@@ -59,10 +64,12 @@
   color: rgba(45, 47, 48, 0.7);
   padding-left: 6px;
   transition: all .3s ease-in-out;
+
   &:hover {
     color: $color-black;
   }
 }
+
 .companies_btn {
   display: block;
   font-weight: 400;
@@ -71,17 +78,20 @@
   padding: 6px 56px;
   background-color: $color-blue2;
   border: none;
-  border-radius:4px;
+  border-radius: 4px;
   color: $color-white;
   transition: all .3s ease-in-out;
+
   &:hover {
     opacity: .8;
     cursor: pointer;
   }
 }
+
 .companies_content.mobile {
   display: none;
 }
+
 @media (max-width: 1430px) {
   .companies_img {
     width: 80px;
@@ -98,17 +108,19 @@
     width: 110px;
     padding: 0;
   }
-  .companies_item {
+  .companies_content .slide-item {
     width: 260px;
     height: 155px;
   }
 }
-@media  (max-width: 1199px){
-  .companies_items {
+
+@media (max-width: 1199px) {
+  .slides {
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 20px;
-    .companies_item {
+
+    .slide-item {
       width: 350px;
     }
   }
@@ -128,6 +140,7 @@
     text-align: center;
   }
 }
+
 @media (max-width: 991px) {
   .companies_content {
     display: none;
@@ -135,10 +148,10 @@
   .companies_content.mobile {
     display: block;
   }
-  .companies_items .companies_item {
+  .slides .slide-item {
     width: 500px;
     padding-left: 18%;
-}
+  }
   .companies_img {
     width: 100px;
     height: 100px;
@@ -146,22 +159,24 @@
   .companies_name {
     margin-bottom: 15px;
   }
-.fa-chevron-right {
- right: 9%;
+  .fa-chevron-right {
+    right: 9%;
+  }
 }
-}
+
 @media (max-width: 767px) {
   .companies_title {
     font-size: 30px;
   }
-  .companies_items .companies_item {
+  .slides .slide-item {
     width: 400px;
     padding: 22px 44px;
     padding-left: 14%;
   }
 }
+
 @media (max-width: 575px) {
-  .companies_items .companies_item {
+  .slides .slide-item {
     width: 400px;
     padding-left: 11%;
     padding: 32px 18px;
@@ -171,28 +186,29 @@
   .companies_img {
     width: 80px;
     height: 80px;
+  }
+  .companies_name {
+    margin-bottom: 2px;
+  }
+  .active_jobs {
+    margin-bottom: 11px;
+  }
+  .fa-chevron-right {
+    right: 3px;
+  }
+  .fa-chevron-left {
+    left: 0;
+  }
 }
-.companies_name  {
-  margin-bottom: 2px;
-}
-.active_jobs {
-  margin-bottom: 11px;
-}
-.fa-chevron-right {
-  right: 3px;
-}
-.fa-chevron-left {
- left:0;
-}
-}
+
 @media (max-width: 450px) {
-  .companies_items .companies_item {
-  width: 300px;
-}
-.fa-chevron-left {
-  padding: 5px 8px;
-}
-.fa-chevron-right {
-  padding: 5px 8px;
-}
+  .slides .slide-item {
+    width: 300px;
+  }
+  .fa-chevron-left {
+    padding: 5px 8px;
+  }
+  .fa-chevron-right {
+    padding: 5px 8px;
+  }
 }

@@ -1,14 +1,17 @@
 .main {
   margin-bottom: 28px;
 }
+
 .main_content {
   max-width: 865px;
   margin-left: 20%;
 }
+
 .main_title {
   @include title;
   margin-bottom: 24px;
 }
+
 .main_btn {
   font-family: $font;
   font-weight: 700;
@@ -24,18 +27,21 @@
   background: transparent;
   color: $color-grey;
   transition: all .3s ease-in-out;
-    &:hover {
+
+  &:hover {
     background-color: $color-blue;
     color: $color-white;
     cursor: pointer;
   }
 }
+
 .find_text {
   width: 655px;
   height: 60px;
   background: $color-white;
   border: 2px solid $color-blue;
   border-radius: 16px;
+
   &::placeholder {
     font-size: 22px;
     color: rgba(45, 47, 48, 0.7);
@@ -45,6 +51,7 @@
     align-items: center;
   }
 }
+
 .find_btn {
   height: 60px;
   width: 200px;
@@ -60,34 +67,38 @@
   display: flex;
   align-items: center;
   transition: all .3s ease-in-out;
+
   &:hover {
     opacity: .9;
     cursor: pointer;
   }
 }
+
 .main_find {
   display: flex;
   align-items: center;
   padding-bottom: 61px;
 }
+
 @media (max-width: 1430px) {
-    .main_title {
-      font-size: 35px;
-    }
-    .main_btn {
-      font-size: 20px;
-    }
-    .find_text-job {
-      width: 550px;
-    }
-    .find_btn {
-      font-size: 27px;
-    }
-    .main_content {
-      margin-left: 0;
-    }
+  .main_title {
+    font-size: 35px;
+  }
+  .main_btn {
+    font-size: 20px;
+  }
+  .find_text-job {
+    width: 550px;
+  }
+  .find_btn {
+    font-size: 27px;
+  }
+  .main_content {
+    margin-left: 0;
+  }
 }
-@media  (max-width: 1199px) {
+
+@media (max-width: 1199px) {
   .main_title {
     font-size: 30px;
   }
@@ -101,8 +112,9 @@
     font-size: 25px;
     height: 58px;
     width: 173px;
+  }
 }
-}
+
 @media (max-width: 991px) {
   .main_content {
     padding-top: 70px;
@@ -117,14 +129,16 @@
   .find_text {
     width: 450px;
   }
-  .find_btn {font-size: 19px;
-  height: 60px;
-  width: 153px;
+  .find_btn {
+    font-size: 19px;
+    height: 60px;
+    width: 153px;
+  }
+  .find_text::placeholder {
+    font-size: 20px;
+  }
 }
-.find_text::placeholder {
-  font-size: 20px;
-}
-}
+
 @media (max-width: 767px) {
   .find_text::placeholder {
     font-size: 16px;
@@ -139,6 +153,7 @@
     width: 138px;
   }
 }
+
 @media (max-width: 575px) {
   .main {
     padding-left: 3%;

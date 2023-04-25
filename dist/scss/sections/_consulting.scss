@@ -2,29 +2,34 @@
   @include title;
   margin-bottom: 39px;
 }
+
 .consulting_help {
   width: 1419px;
-  height:67px;
+  height: 67px;
   background: linear-gradient(180deg, #0064FF 0%, #2698FF 100%);
   border-radius: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 150px;
+
   a {
     color: $color-white;
     font-weight: 300;
     font-size: 40px;
     font-family: $font2;
     transition: all .3s ease-in-out;
+
     &:hover {
       color: rgb(210, 210, 210);
     }
   }
 }
+
 .consulting_items {
   display: flex;
 }
+
 .consulting_content {
   background: $color-white;
   border: 2px solid rgba(0, 91, 255, 0.15);
@@ -33,55 +38,50 @@
   height: 350px;
   margin-right: 14px;
   margin-bottom: 17px;
+
   &:nth-last-child {
     margin-right: 0;
   }
 }
-.workplace{
-  img{
+
+.workplace {
+  img {
     width: 40px;
     height: 40px;
   }
 }
+
 .consulting_img {
   text-align: center;
   margin-top: -27%;
+
   img {
     transition: all .3s ease-in-out;
   }
+
   img:hover {
     transform: translateY(-10px);
     cursor: pointer;
   }
 }
+
 .consulting_desc {
   padding-left: 51px;
 }
+
 .consulting_name {
   font-weight: 600;
   font-size: 24px;
   font-family: $font2;
   margin-bottom: 11px;
 }
+
 .stars span {
   font-weight: 700;
   font-size: 12px;
   font-family: $font2;
 }
-.stars{
-  margin-bottom: 17px;
-  img {
-    margin-right: 6px;
-  }
-}
-.star:active {
-  border: 1px solid $color-blue;
-  border-radius: 50%;
-}
-.star:hover {
-  cursor: pointer;
-}
-.consulting_position{
+.consulting_position {
   font-weight: 500;
   font-size: 16px;
   font-family: $font2;
@@ -92,11 +92,13 @@
   text-align: center;
   margin-bottom: 17px;
   transition: all .3s ease-in-out;
+
   &:hover {
     cursor: pointer;
     opacity: .9;
   }
 }
+
 .consulting_years {
   font-weight: 500;
   font-size: 16px;
@@ -108,15 +110,18 @@
   text-align: center;
   margin-bottom: 26px;
   transition: all .3s ease-in-out;
+
   &:hover {
     cursor: pointer;
     opacity: .9;
   }
 }
-.workplace{
+
+.workplace {
   img {
     margin-right: 3px;
     transition: all .3s ease-in-out;
+
     &:hover {
       cursor: pointer;
       border: 2px solid $color-blue;
@@ -124,6 +129,7 @@
     }
   }
 }
+
 .consulting_btn {
   background: $color-purple;
   border-radius: 30px;
@@ -136,21 +142,89 @@
   font-family: $font2;
   margin-bottom: 14px;
   transition: all .3s ease-in-out;
+
   &:hover {
     opacity: .9;
     cursor: pointer;
   }
 }
-.discount{
+
+.discount {
   font-weight: 400;
   font-size: 24px;
   color: $color-purple;
   font-family: $font2;
   margin-bottom: 38px;
 }
-@media  (max-width: 1430px) {
+.stars {
+  margin-bottom: 17px;
+  display: flex;
+}
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffba51;
+  display: block;
+  width: 28px;
+  height: 20px;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+
+  &:hover {
+    font-size: 16px;
+  }
+
+  &:before {
+    display: flex;
+    width: 13px;
+    height: 13px;
+    line-height: normal;
+    vertical-align: baseline;
+    margin-top: 0;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    content: "\f005";
+  }
+}
+
+input:checked + label ~ label {
+  &:before {
+    content: "\f006";
+  }
+}
+
+#wrapper {
+  display: flex;
+  justify-content: left;
+
+  &:hover {
+    label {
+      &:before {
+        content: "\f005";
+      }
+
+      &:hover {
+        & ~ label:before {
+          content: "\f006";
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1430px) {
   .consulting_help {
     width: 1100px;
+
     a {
       font-size: 35px;
     }
@@ -166,26 +240,30 @@
     justify-content: center;
   }
 }
-@media  (max-width: 1199px){
+
+@media (max-width: 1199px) {
   .consulting_title {
     text-align: center;
   }
   .consulting_help {
     width: 960px;
+
     a {
       font-size: 30px;
     }
   }
 }
-@media  (max-width: 991px){
+
+@media (max-width: 991px) {
   .consulting_help {
     width: 720px;
     margin-bottom: 105px;
+  }
+  .consulting_help a {
+    font-size: 25px;
+  }
 }
-.consulting_help a {
-  font-size: 25px;
-}
-}
+
 @media (max-width: 767px) {
   .consulting_help {
     width: 540px;
@@ -200,37 +278,38 @@
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 575px) {
   .consulting_help {
     width: 320px;
     margin: 39px auto 105px;
-}
-.consulting_help a {
-  font-size: 12px;
-}
-.consulting_content {
-  width: 300px;
-  height: 350px;
+  }
+  .consulting_help a {
+    font-size: 12px;
+  }
+  .consulting_content {
+    width: 300px;
+    height: 350px;
 
-  margin-right: 0;
-}
-.consulting_desc {
-  padding-left: 20px;
-}
-.consulting_name {
-  margin-bottom: 3px;
-}
-.stars {
-  margin-bottom: 7px;
-}
-.consulting_position {
-  margin-bottom: 7px;
-}
-.consulting_years {
-  margin-bottom: 7px;
-}
-.consulting_btn {
-  width: 300px;
-}
+    margin-right: 0;
+  }
+  .consulting_desc {
+    padding-left: 20px;
+  }
+  .consulting_name {
+    margin-bottom: 3px;
+  }
+  .stars {
+    margin-bottom: 7px;
+  }
+  .consulting_position {
+    margin-bottom: 7px;
+  }
+  .consulting_years {
+    margin-bottom: 7px;
+  }
+  .consulting_btn {
+    width: 300px;
+  }
 }
 
