@@ -98,7 +98,7 @@
 
 @media (max-width: 767px) {
   .showing_items {
-    column-gap: 38px;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
   }
 }
