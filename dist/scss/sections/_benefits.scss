@@ -34,7 +34,7 @@
   margin-bottom: 38px;
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .benefits_items {
     grid-template-columns: auto;
   }
