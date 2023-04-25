@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 58px;
-    width: 100%
+    width: 100%;
   }
     .nav_link {
         font-size: 20px;
@@ -168,13 +168,6 @@
 @media screen and (max-width: 767px) {
   .menu .nav_link {
     font-size: 20px;
-    width: 100%;
-  }
-  .header .menu {
-    width: 100%;
-  }
-  .menu .nav_link--btn {
-    width: 40%;
   }
 }
 @media screen and (max-width: 575px) {
