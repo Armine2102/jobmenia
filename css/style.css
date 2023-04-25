@@ -1361,7 +1361,8 @@ input:checked + label ~ label:before {
 
 @media (max-width: 767px) {
   .showing_items {
-    column-gap: 38px; } }
+    column-gap: 38px;
+    justify-content: left; } }
 
 .bar_content {
   display: flex;
