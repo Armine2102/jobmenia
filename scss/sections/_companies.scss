@@ -27,6 +27,9 @@
     display: flex;
     padding: 36px 14px;
     margin-right: 17px;
+    &:hover {
+      cursor: pointer;
+    }
 
     &:nth-last-child {
       margin-right: 0;

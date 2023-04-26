@@ -810,6 +810,8 @@
     display: flex;
     padding: 36px 14px;
     margin-right: 17px; }
+    .companies_content .slide-item:hover {
+      cursor: pointer; }
     .companies_content .slide-item:nth-last-child {
       margin-right: 0; }
 
@@ -1064,7 +1066,9 @@
   margin-bottom: 14px;
   transition: all .3s ease-in-out; }
   .consulting_btn:hover {
-    opacity: .9;
+    color: #6046FB;
+    border: 2px solid #6046FB;
+    background-color: #ffffff;
     cursor: pointer; }
 
 .discount {
@@ -1392,7 +1396,8 @@ input:checked + label ~ label:before {
       margin-right: 20px;
       transition: all .3s ease-in-out; }
       .bar_content .left_bar-content .job_card:hover {
-        border: 2px solid #005BFF; }
+        border: 2px solid #005BFF;
+        cursor: pointer; }
       .bar_content .left_bar-content .job_card:nth-last-child {
         margin-right: 0; }
   .bar_content .right_bar-content {

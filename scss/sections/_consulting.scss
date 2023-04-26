@@ -144,7 +144,9 @@
   transition: all .3s ease-in-out;
 
   &:hover {
-    opacity: .9;
+    color: $color-purple;
+    border: 2px solid $color-purple;
+    background-color: $color-white;
     cursor: pointer;
   }
 }
