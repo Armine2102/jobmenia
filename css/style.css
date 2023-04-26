@@ -177,7 +177,8 @@
     font-size: 30px;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
-    text-align: center; }
+    text-align: center;
+    white-space: nowrap; }
   .menu .nav_link--btn {
     background-color: #ffffff;
     color: #75C1FF; } }
