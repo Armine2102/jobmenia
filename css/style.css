@@ -181,7 +181,8 @@
     white-space: nowrap; }
   .menu .nav_link--btn {
     background-color: #ffffff;
-    color: #75C1FF; } }
+    color: #75C1FF;
+    white-space: nowrap; } }
 
 @media screen and (max-width: 767px) {
   .menu .nav_link {
