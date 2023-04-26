@@ -16,7 +16,7 @@
         color: $color-black1;
         transition: all .3s ease-in-out;
         &:hover {
-          opacity: .8;
+          border-bottom: 2px solid $color-blue;
         }
       }
     .nav_link--btn {
@@ -158,10 +158,12 @@
   color: $color-white;
   border-bottom: 1px solid $color-white;
   text-align: center;
+  white-space: nowrap;
 }
 .menu .nav_link--btn {
   background-color: $color-white;
   color: #75C1FF;
+  white-space: nowrap;
 
 }
 }
