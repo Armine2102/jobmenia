@@ -64,7 +64,7 @@
     color: #2D2F30;
     transition: all .3s ease-in-out; }
     .header .nav_link:hover {
-      opacity: .8; }
+      border-bottom: 2px solid #005BFF; }
   .header .nav_link--btn {
     background-color: #005BFF;
     padding: 4px 16px;
@@ -412,7 +412,9 @@
   align-items: center;
   transition: all .3s ease-in-out; }
   .find_btn:hover {
-    opacity: .9;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 100%, #d7e1ec 0%);
+    color: #005BFF;
     cursor: pointer; }
 
 .main_find {
@@ -523,7 +525,8 @@
       margin-right: 20px;
       transition: all .3s ease-in-out; }
       .job_content .slides .slide-item:hover {
-        border: 2px solid #005BFF; }
+        border: 2px solid #005BFF;
+        cursor: pointer; }
       .job_content .slides .slide-item:nth-last-child {
         margin-right: 0; }
 

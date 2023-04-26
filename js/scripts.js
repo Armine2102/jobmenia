@@ -25,7 +25,7 @@ function currentSlide(idx, n) {
 
 function showSlides(idx, n) {
     let i;
-    let slidesContent = null
+    let slidesContent
 
     if (window.screen.availWidth <= 991) {
         slidesContent = document.querySelector(sliders[idx].slidesContentClass + '.mobile')
@@ -101,4 +101,11 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     })
 
+    const slideItems = document.querySelectorAll('.slide-item')
+
+    slideItems.forEach(item => {
+        item.addEventListener('click', () => {
+            window.location.href = item.dataset.href
+        })
+    })
 })

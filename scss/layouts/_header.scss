@@ -16,7 +16,7 @@
         color: $color-black1;
         transition: all .3s ease-in-out;
         &:hover {
-          opacity: .8;
+          border-bottom: 2px solid $color-blue;
         }
       }
     .nav_link--btn {
